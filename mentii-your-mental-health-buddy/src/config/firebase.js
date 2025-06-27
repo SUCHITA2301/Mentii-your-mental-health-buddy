@@ -5,13 +5,13 @@ import { getFirestore, collection, getDocs, addDoc, query, orderBy  } from 'fire
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDnyq5vhxTuoXWSo4rrDVjpDtF297stBJY",
-  authDomain: "mentii-2a174.firebaseapp.com",
-  projectId: "mentii-2a174",
-  storageBucket: "mentii-2a174.firebasestorage.app",
-  messagingSenderId: "210894663233",
-  appId: "1:210894663233:web:7c4db3cb8dfa30fc4fa0c0",
-  measurementId: "G-RX3JQ9CTTE"
+  apiKey: import.meta.env.FIREBASE_API,
+  authDomain: import.meta.env.AuthDomain,
+  projectId: import.meta.env.projectId,
+  storageBucket: import.meta.env.storageBucket,
+  messagingSenderId: import.meta.env.messagingSenderId,
+  appId: import.meta.env.appId,
+  measurementId: import.meta.env.measurementId
 };
 
 // Initialize Firebase only if it hasn't been initialized
